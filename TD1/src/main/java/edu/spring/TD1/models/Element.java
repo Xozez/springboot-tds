@@ -20,6 +20,10 @@ public class Element {
         this.evaluation = evaluation;
     }
 
+    public Element(String nom, int evaluation) {
+        this.nom = nom;
+        this.evaluation = evaluation;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
