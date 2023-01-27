@@ -2,7 +2,7 @@ package edu.spring.TD1.models;
 
 import java.util.Objects;
 
-public class Element {
+public class Item {
 
     private String nom;
     private int evaluation;
@@ -20,14 +20,14 @@ public class Element {
         this.evaluation = evaluation;
     }
 
-    public Element(String nom, int evaluation) {
+    public Item(String nom, int evaluation) {
         this.nom = nom;
         this.evaluation = evaluation;
     }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Element element)) return false;
+        if (!(o instanceof Item element)) return false;
         return evaluation == element.evaluation && Objects.equals(nom, element.nom);
     }
 }
